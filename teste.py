@@ -3,7 +3,7 @@ import streamlit as st
 st.title('FLAMENGO - CAMPEÕES')
 
 st.write("1981: Raul, Leandro, Marinho, Mozer, Junior, Adílio, Andrade, Zico, Tita, Nunes, Lico, Carpegiani")
-st.image("https://imortaisdofutebol.com/jogos-eternos-flamengo-3x0-liverpool-1981/)
+st.image("https://imortaisdofutebol.com/jogos-eternos-flamengo-3x0-liverpool-1981/")
          
 st.write("2013: Felipe, Léo Moura, Samir, Chicão, André Santos, Amaral, Luiz Antônio, Elias, Carlos Eduardo, Hernane, Paulinho, Jayme de Almeida")
 st.write("2019: Diego Alves, Rafinha, Rodrigo Caio, Pablo Marí, Filipe Luís, Willian Arão, Gerson, Giorgian de Arrascaeta, Éverton Ribeiro, Bruno Henrique, Gabriel B., Jorge Jesus")
