@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.title('FLAMENGO - CAMPEÕES')
-st.image("https://imortaisdofutebol.com/jogos-eternos-flamengo-3x0-liverpool-1981/")
+st.image("https://mundodosprodutos.com.br/wp-content/uploads/2024/07/curiosidades-sobre-o-flamengo.png")
 st.write("1981: Raul, Leandro, Marinho, Mozer, Junior, Adílio, Andrade, Zico, Tita, Nunes, Lico, Carpegiani")         
 
 st.write("2013: Felipe, Léo Moura, Samir, Chicão, André Santos, Amaral, Luiz Antônio, Elias, Carlos Eduardo, Hernane, Paulinho, Jayme de Almeida")
