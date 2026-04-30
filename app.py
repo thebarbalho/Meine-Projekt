@@ -1,9 +1,9 @@
 import streamlit as st
 import random
 
-# ------------------------
+
 # AVALIAÇÃO DOS TIMES
-# ------------------------
+
 teams = {
     "76ers": {
      "players": [
@@ -277,9 +277,15 @@ teams = {
         "defense": 90
 }
 
-# ------------------------
+# FUNÇÃO DE ATAQUE DE UM TIME
+
+def calculate_team_attack(team):
+    total = sum(player["attack"] for player in team["players"])
+    return total / len(team["players"])  # média dos 5 jogadores
+
+
 # SIMULAÇÃO DE UM QUARTO
-# ------------------------
+
 def simulate_quarter(team1, team2):
     score1 = 0
     score2 = 0
@@ -287,7 +293,7 @@ def simulate_quarter(team1, team2):
     for _ in range(25): # 25 seria o número médio de posses de bola que cada time tem em um quarto de jogo
 
         # TIME 1
-        prob1 = team1["attack"] / (team1["attack"] + team2["defense"])
+        prob1 = attack1 / (attack1 + team2["defense"])
 
         if random.random() < prob1:
             play = random.choices(
@@ -295,15 +301,15 @@ def simulate_quarter(team1, team2):
                 weights=[0.6, 0.3, 0.1]
             )[0]
 
-            if play == "2PT":
-                score1 += 2 # arremessos que valem dois pontos seriam bandejas, enterradas ou arremessos de curta/média distância
-            elif play == "3PT":
-                score1 += 3 # arremessos que valem três pontos seriam arremessos de longa distância
-            else:
-                score1 += random.choice([1, 2]) # arremessos diferentes de 3PT e 2PT são lances livres, os quais, dependendo dos acontecimentos em quadra, podem ser apenas um ou dois seguidos
+            if play == "2PT": # arremessos de curta e média distância
+                score1 += 2
+            elif play == "3PT": # arremessos de longa distância
+                score1 += 3
+            else: # lances livres, os quais podem ser apenas um arremesso ou dois arremessos
+                score1 += random.choice([1, 2])
 
         # TIME 2
-        prob2 = team2["attack"] / (team2["attack"] + team1["defense"])
+        prob2 = attack2 / (attack2 + team1["defense"])
 
         if random.random() < prob2:
             play = random.choices(
@@ -320,9 +326,10 @@ def simulate_quarter(team1, team2):
 
     return score1, score2
 
-# ------------------------
+
+
 # SIMULAÇÃO DO JOGO
-# ------------------------
+
 def simulate_game(team1, team2):
     quarters = []
     total1 = 0
@@ -337,7 +344,7 @@ def simulate_game(team1, team2):
 
     return total1, total2, quarters
 
-# ------------------------
+
 # INTERFACE NO STREAMLIT
 # ------------------------
 st.title("SIMULADOR DE JOGOS DA NBA 2025/26")
@@ -346,22 +353,26 @@ team1_name = st.selectbox("Escolha o Time 1", list(teams.keys()))
 team2_name = st.selectbox("Escolha o Time 2", list(teams.keys()))
 
 if st.button("Simular Jogo"):
-    team1 = teams[team1_name]
-    team2 = teams[team2_name]
 
-    score1, score2, quarters = simulate_game(team1, team2)
-
-    st.subheader("Resultado Final")
-    st.write(f"{team1_name} {score1} x {score2} {team2_name}")
-
-    st.subheader("Pontuação por Quarto de Jogo")
-
-    for i, (q1, q2) in enumerate(quarters):
-        st.write(f"Q{i+1}: {team1_name} {q1} x {q2} {team2_name}")
-
-    if score1 > score2:
-        st.success(f"{team1_name} venceu!")
-    elif score2 > score1:
-        st.success(f" {team2_name} venceu!")
+    if team1_name == team2_name:
+        st.warning("Por obséquio, escolha times diferentes.")
     else:
-        st.warning("Empate! Esse jogo iria para a prorrogação para decidir um vencedor final.")
+        team1 = teams[team1_name]
+        team2 = teams[team2_name]
+
+        score1, score2, quarters = simulate_game(team1, team2)
+
+        st.subheader("Resultado Final do Confronto")
+        st.write(f"{team1_name} {score1} x {score2} {team2_name}")
+
+        st.subheader("Pontuação por Quarto")
+
+        for i, (q1, q2) in enumerate(quarters):
+            st.write(f"Q{i+1}: {team1_name} {q1} x {q2} {team2_name}")
+
+        if score1 > score2:
+            st.success(f"{team1_name} venceu!")
+        elif score2 > score1:
+            st.success(f"{team2_name} venceu!")
+        else:
+            st.warning("Empate! Esse duelo iria para prorrogação)")
