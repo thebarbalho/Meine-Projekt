@@ -92,7 +92,7 @@ teams = {
             {"name": "Jaime Jaquez Jr.", "attack": 89},
             {"name": "Andrew Wiggins", "attack": 89},
             {"name": "Bam Adebayo", "attack": 96}
-        },
+         ],
         "defense": 93,
     }, 
     "Hornets": {
