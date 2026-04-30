@@ -13,7 +13,7 @@ teams = {
             {"name": "Joel Embiid", "attack": 96},
             {"name": "Andre Drummond", "attack": 86}
         ],
-        "defense": 94
+        "defense": 94,
     "Bucks": {
      "players": [
             {"name": "Ryan Rollins", "attack": 84},
