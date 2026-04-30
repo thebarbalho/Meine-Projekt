@@ -12,7 +12,7 @@ teams = {
             {"name": "Paul George", "attack": 91},
             {"name": "Joel Embiid", "attack": 96},
             {"name": "Andre Drummond", "attack": 86}
-        ],
+        ]},
         "defense": 94,
     "Bucks": {
      "players": [
@@ -21,7 +21,7 @@ teams = {
             {"name": "Giannis Antetokounmpo", "attack": 98},
             {"name": "Bobby Portis Jr.", "attack": 87},
             {"name": "Myles Turner", "attack": 88}
-        ],
+        ]},
         "defense": 91,
     "Bulls": {
      "players": [
@@ -30,7 +30,7 @@ teams = {
             {"name": "Collin Sexton", "attack": 87},
             {"name": "Matas Buzelis", "attack": 88},
             {"name": "Jalen Smith", "attack": 82}
-        ],
+        ]},
         "defense": 88,
     "Cavaliers": {
      "players": [
@@ -39,7 +39,7 @@ teams = {
             {"name": "Max Strus", "attack": 87},
             {"name": "Evan Mobley", "attack": 91},
             {"name": "Jarrett Allen", "attack": 86}
-        ],
+        ]},
         "defense": 96,
     "Celtics": {
      "players": [
@@ -48,7 +48,7 @@ teams = {
             {"name": "Jaylen Brown", "attack": 97},
             {"name": "Jayson Tatum", "attack": 99},
             {"name": "Nicola Vucevic", "attack": 89}
-        ],
+        ]},
         "defense": 94,
     "Clippers": {
      "players": [
@@ -57,7 +57,7 @@ teams = {
             {"name": "Kawhi Leonard", "attack": 97},
             {"name": "John Collins", "attack": 87},
             {"name": "Brook Lopez", "attack": 90}
-        ],
+        ]},
         "defense": 93,
     "Grizzlies": {
      "players": [
@@ -66,7 +66,7 @@ teams = {
             {"name": "G.G. Jackson", "attack": 86},
             {"name": "Santi Aldama", "attack": 83},
             {"name": "Zach Edey", "attack": 88}
-        ],
+        ]},
         "defense": 86,
     "Hawks": {
      "players": [
@@ -75,7 +75,7 @@ teams = {
             {"name": "Jonathan Kuminga", "attack": 88},
             {"name": "Jalen Johnson", "attack": 93},
             {"name": "Onyeka Okognwu", "attack": 86}
-        ],
+        ]},
         "defense": 92,
     "Heat": {
      "players": [
@@ -84,7 +84,7 @@ teams = {
             {"name": "Jaime Jaquez Jr.", "attack": 89},
             {"name": "Andrew Wiggins", "attack": 89},
             {"name": "Bam Adebayo", "attack": 96}
-        ],
+        ]},
         "defense": 93,
     "Hornets": {
      "players": [
@@ -93,7 +93,7 @@ teams = {
             {"name": "Kon Knueppel", "attack": 93},
             {"name": "Miles Bridges", "attack": 88},
             {"name": "Moussa Diabate", "attack": 84}
-        ],
+        ]},
         "defense": 88,
     "Jazz": {
      "players": [
@@ -102,7 +102,7 @@ teams = {
             {"name": "Kevin Love", "attack": 86},
             {"name": "Jaren Jackson Jr.", "attack": 88},
             {"name": "Walker Kessler", "attack": 87}
-        ],
+        ]},
         "defense": 90,
     "Kings": {
      "players": [
@@ -111,7 +111,7 @@ teams = {
             {"name": "DeMar DeRozan", "attack": 91},
             {"name": "Keegan Murray", "attack": 85},
             {"name": "Domantas Sabonis", "attack": 94}
-        ],
+        ]},
         "defense": 85,
     "Knicks": {
      "players": [
@@ -120,7 +120,7 @@ teams = {
             {"name": "O.G. Anunoby", "attack": 90},
             {"name": "Josh Hart", "attack": 89},
             {"name": "Karl-Anthony Towns", "attack": 96}
-        ],
+        ]},
         "defense": 92,
     "Lakers": {
      "players": [
@@ -129,7 +129,7 @@ teams = {
             {"name": "Marcus Smart", "attack": 88},
             {"name": "LeBron James", "attack": 99},
             {"name": "DeAndre Ayton", "attack": 90}
-        ],
+        ]},
         "defense": 93,
     "Magic": {
      "players": [
@@ -138,7 +138,7 @@ teams = {
             {"name": "Franz Wagner", "attack": 94},
             {"name": "Paolo Banchero", "attack": 96},
             {"name": "Wendell Carter Jr.", "attack": 88}
-        ],
+        ]},
         "defense": 95,
     "Mavericks": {
      "players": [
@@ -147,7 +147,7 @@ teams = {
             {"name": "Khris Middleton", "attack": 92},
             {"name": "Cooper Flagg", "attack": 95},
             {"name": "Daniel Gafford", "attack": 88}
-        ],
+        ]},
         "defense": 91,
     "Nets": {
      "players": [
@@ -156,7 +156,7 @@ teams = {
             {"name": "Danny Wolf", "attack": 86},
             {"name": "Day'Ron Sharpe", "attack": 83},
             {"name": "Nicolas Claxton", "attack": 88}
-        ],
+        ]},
         "defense": 87,
     "Nuggets": {
      "players": [
@@ -165,7 +165,7 @@ teams = {
             {"name": "Cam Johnson", "attack": 88},
             {"name": "Aaron Gordon", "attack": 91},
             {"name": "Nikola Jokic", "attack": 99}
-        ],
+        ]},
         "defense": 90,
     "Pacers": {
      "players": [
@@ -174,7 +174,7 @@ teams = {
             {"name": "Aaron Nesmith", "attack": 87},
             {"name": "Pascal Siakam", "attack": 93},
             {"name": "Ivica Zubac", "attack": 87}
-        ],
+        ]},
         "defense": 93,
     "Pelicans": {
      "players": [
@@ -183,7 +183,7 @@ teams = {
             {"name": "Trey Murphy III", "attack": 89},
             {"name": "Saddiq Bey", "attack": 88},
             {"name": "Zion Williamson", "attack": 94}
-        ],
+        ]},
         "defense": 92,
     "Pistons": {
      "players": [
@@ -192,7 +192,7 @@ teams = {
             {"name": "Ausar Thompson", "attack": 92},
             {"name": "Tobias Harris", "attack": 90},
             {"name": "Jalen Duren", "attack": 92}
-        ],
+        ]},
         "defense": 96,
     "Raptors": {
      "players": [
@@ -201,7 +201,7 @@ teams = {
             {"name": "Brandon Ingram", "attack": 92},
             {"name": "Scottie Barnes", "attack": 94},
             {"name": "Jakob Poeltl", "attack": 87}
-        ],
+        ]},
         "defense": 92,
     "Rockets": {
      "players": [
@@ -210,7 +210,7 @@ teams = {
             {"name": "Tari Eason", "attack": 90},
             {"name": "Kevin Durant", "attack": 98},
             {"name": "Alperen Sengun", "attack": 95}
-        ],
+        ]},
         "defense": 94,
     "Spurs": {
      "players": [
@@ -219,7 +219,7 @@ teams = {
             {"name": "Dylan Harper", "attack": 88},
             {"name": "Devin Vassell", "attack": 88},
             {"name": "Victor Wembanyama", "attack": 86}
-        ],
+        ]},
         "defense": 96,
     "Suns": {
      "players": [
@@ -228,7 +228,7 @@ teams = {
             {"name": "Dillon Brooks", "attack": 92},
             {"name": "Collin Gillespie", "attack": 87},
             {"name": "Mark Williams", "attack": 89}
-        ],
+        ]},
         "defense": 93,
     "Thunder": {
      "players": [
@@ -237,7 +237,7 @@ teams = {
             {"name": "Jalen Williams", "attack": 94},
             {"name": "Chet Holmgren", "attack": 94},
             {"name": "Isaiah Hartenstein", "attack": 90}
-        ],
+        ]},
         "defense": 95,
     "Timberwolves": {
      "players": [
@@ -246,7 +246,7 @@ teams = {
             {"name": "Jaden McDaniels", "attack": 91},
             {"name": "Julius Randle", "attack": 94},
             {"name": "Rudy Gobert", "attack": 90}
-        ],
+        ]},
         "defense": 95,
     "Trail Blazers": {
      "players": [
@@ -273,7 +273,7 @@ teams = {
             {"name": "Kyshawn George", "attack": 84},
             {"name": "Alex Sarr", "attack": 93},
             {"name": "Anthony Davis", "attack": 96}
-        ],
+        ]},
         "defense": 90
 }
 
