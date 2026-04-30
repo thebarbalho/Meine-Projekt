@@ -290,9 +290,11 @@ def simulate_quarter(team1, team2):
     score1 = 0
     score2 = 0
 
-    for _ in range(25): # 25 seria o número médio de posses de bola que cada time tem em um quarto de jogo
+    attack1 = calculate_team_attack(team1)
+    attack2 = calculate_team_attack(team2)
 
-        # TIME 1
+    for _ in range(25):
+
         prob1 = attack1 / (attack1 + team2["defense"])
 
         if random.random() < prob1:
@@ -301,14 +303,13 @@ def simulate_quarter(team1, team2):
                 weights=[0.6, 0.3, 0.1]
             )[0]
 
-            if play == "2PT": # arremessos de curta e média distância
+            if play == "2PT":
                 score1 += 2
-            elif play == "3PT": # arremessos de longa distância
+            elif play == "3PT":
                 score1 += 3
-            else: # lances livres, os quais podem ser apenas um arremesso ou dois arremessos
+            else:
                 score1 += random.choice([1, 2])
 
-        # TIME 2
         prob2 = attack2 / (attack2 + team1["defense"])
 
         if random.random() < prob2:
