@@ -255,7 +255,7 @@ teams = {
             {"name": "Toumani Camara", "attack": 92},
             {"name": "Deni Avdija", "attack": 95},
             {"name": "Donovan Clingan", "attack": 89}
-        ],
+        ]},
         "defense": 92,
     "Warriors": {
      "players": [
