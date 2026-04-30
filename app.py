@@ -45,10 +45,10 @@ teams = {
      "players": [
             {"name": "Payton Pritchard", "attack": 89},
             {"name": "Derrick White", "attack": 91},
-            {"name": "Jaylen Brown", "attack": 97,
+            {"name": "Jaylen Brown", "attack": 97},
             {"name": "Jayson Tatum", "attack": 99},
             {"name": "Nicola Vucevic", "attack": 89}
-        },
+        ],
         "defense": 94,
     "Clippers": {
      "players": [
