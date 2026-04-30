@@ -264,7 +264,7 @@ teams = {
             {"name": "Jimmy Butler", "attack": 95},
             {"name": "Draymond Green", "attack": 92},
             {"name": "Kristaps Porzingis", "attack": 93}
-        ],
+        ]},
         "defense": 94,
     "Wizards": {
      "players": [
