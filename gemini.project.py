@@ -21,7 +21,6 @@ def login():
             st.error("Senha incorreta!")
 
 # PERGUNTA AO GEMINI
-from IPython.display import HTML, Markdown
 
 MODEL_ID = "gemini-2.5-flash"
 model = genai.GenerativeModel(MODEL_ID)
