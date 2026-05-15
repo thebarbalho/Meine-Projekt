@@ -23,7 +23,6 @@ def login():
 # PERGUNTA AO GEMINI
 
 MODEL_ID = "gemini-2.5-flash"
-model = genai.GenerativeModel(MODEL_ID)
 
 resposta = model.generate_content(
     contents='?',
