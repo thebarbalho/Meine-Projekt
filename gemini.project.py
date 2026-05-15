@@ -2,7 +2,7 @@ import streamlit as st
 
 # SENHAS DE ACESSO AO APP
 
-GEMINI_API_KEY= AIzaSyBJRSrbzvLVO7NIs7irPm1VCCebE6Lq9zE
+GEMINI_API_KEY= 'AIzaSyBJRSrbzvLVO7NIs7irPm1VCCebE6Lq9zE'
 APP_PASSWORD=2908
 
 if "autenticado" not in st.session_state:
