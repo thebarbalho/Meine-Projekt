@@ -9,11 +9,10 @@ APP_PASSWORD=2908
 if "autenticado" not in st.session_state:
     st.session_state.autenticado = False
 
+st.title("LOGIN NO APP")
+
 def login():
-    st.title("LOGIN NO APP")
-
     senha = st.text_input("Digite a senha:", type="password")
-
     if st.button("Entrar"):
         if senha == APP_PASSWORD:
             st.session_state.autenticado = True
