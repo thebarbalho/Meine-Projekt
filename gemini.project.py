@@ -27,12 +27,15 @@ else:
 
 # PERGUNTA AO GEMINI
 
-from IPython.display import HTML, Markdown
+def app():
+    st.title("Consulte ao Gemini")
 
-model = genai.GenerativeModel(MODEL_ID)
+    pergunta = st.text_input("Digite o seu pedido:")
 
-resposta = model.generate_content(
-    contents=st.write
-)
-# Exibe a resposta na tela
-display(Markdown(f"Resposta:\n {resposta.text}"))
+    if st.button("Enviar"):
+        if pergunta:
+            with st.spinner("Pensando..."):
+                resposta = model.generate_content(pergunta)
+                st.success(resposta.text)
+        else:
+            st.warning("Formule um pedido melhor")
