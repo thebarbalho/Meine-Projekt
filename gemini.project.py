@@ -13,8 +13,8 @@ st.title("LOGIN NO APP")
 
 def login():
     senha = st.text_input("Digite a senha:", type="password")
-if st.button("Entrar"):
-    if senha == APP_PASSWORD:
-        st.session_state.autenticado = True
+    if st.button("Entrar"):
+        if senha == APP_PASSWORD:
+            st.session_state.autenticado = True
     else:
         st.error("Senha incorreta!")
