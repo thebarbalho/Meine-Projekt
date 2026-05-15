@@ -1,9 +1,6 @@
-# Configura a API Key do Google Gemini e grava em uma variável de ambiente
+import streamlit as st
 
-import os
-from google.colab import userdata
-
-os.environ["GOOGLE_API_KEY"] = userdata.get('GEMINI_API_KEY')
+os.secrets["GOOGLE_API_KEY"] = userdata.get('GEMINI_API_KEY')
 
 # Configura o cliente da SDK do Gemini
 
