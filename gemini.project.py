@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 
-/// # SENHAS DE ACESSO AO APP ///
+# SENHAS DE ACESSO AO APP
 
 GEMINI_API_KEY= AIzaSyBJRSrbzvLVO7NIs7irPm1VCCebE6Lq9zE
 APP_PASSWORD=2908
