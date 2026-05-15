@@ -1,6 +1,9 @@
 import streamlit as st
 from google import genai
 
+if "autenticado" not in st.session_state:
+    st.session_state.autenticado = False
+
 # ACESSO AO PROGRAMA
 
 GEMINI_API_KEY= 'AIzaSyBJRSrbzvLVO7NIs7irPm1VCCebE6Lq9zE'
@@ -17,6 +20,7 @@ def login():
     if st.button("Entrar"):
         if senha == APP_PASSWORD:
             st.session_state.autenticado = True
+            st.rerun()
         else:
             st.error("Senha incorreta!")
 
@@ -39,3 +43,8 @@ def app():
                 st.success(resposta.text)
         else:
             st.warning("Formule um pedido melhor")
+
+if st.session_state.autenticado:
+    app()
+else:
+    login()
