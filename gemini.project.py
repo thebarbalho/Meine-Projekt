@@ -19,13 +19,3 @@ def login():
             st.session_state.autenticado = True
         else:
             st.error("Senha incorreta!")
-
-# PERGUNTA AO GEMINI
-
-MODEL_ID = "gemini-2.5-flash"
-
-resposta = model.generate_content(
-    contents='?',
-)
-# Exibe a resposta na tela
-display(Markdown(f"Resposta:\n {resposta.text}"))
