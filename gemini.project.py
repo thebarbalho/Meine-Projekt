@@ -1,4 +1,5 @@
 import streamlit as st
+from google import genai
 
 # SENHAS DE ACESSO AO APP
 
@@ -20,9 +21,9 @@ def login():
             st.error("Senha incorreta!")
 
 # PERGUNTA AO GEMINI
-
 from IPython.display import HTML, Markdown
 
+MODEL_ID = "gemini-2.5-flash"
 model = genai.GenerativeModel(MODEL_ID)
 
 resposta = model.generate_content(
