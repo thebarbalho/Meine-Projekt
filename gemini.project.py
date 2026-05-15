@@ -1,6 +1,8 @@
 import streamlit as st
 from google import genai
 
+# ACESSO AO PROGRAMA
+
 GEMINI_API_KEY= 'AIzaSyBJRSrbzvLVO7NIs7irPm1VCCebE6Lq9zE'
 APP_PASSWORD= "2908"
 
@@ -22,3 +24,15 @@ if not st.session_state.autenticado:
     login()
 else:
     st.write("Você está logado!")
+
+# PERGUNTA AO GEMINI
+
+from IPython.display import HTML, Markdown
+
+model = genai.GenerativeModel(MODEL_ID)
+
+resposta = model.generate_content(
+    contents=st.write
+)
+# Exibe a resposta na tela
+display(Markdown(f"Resposta:\n {resposta.text}"))
