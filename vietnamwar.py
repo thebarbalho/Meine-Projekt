@@ -10,9 +10,6 @@ arquivo = "vietnamwar.xlsx.xlsx"
 # Carrega Excel
 xls = pd.ExcelFile(arquivo)
 
-st.write("📂 Abas encontradas no arquivo:")
-st.write(xls.sheet_names)
-
 aba = st.selectbox("Escolha a aba:", xls.sheet_names)
 
 # Ler dados
