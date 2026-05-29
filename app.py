@@ -1,10 +1,12 @@
 import streamlit as st
 import random
+import pandas as pd
 
 
 # AVALIAÇÃO DOS TIMES
 
-teams = load_teams()
+def load_teams():
+    df = pd.read_csv("nba_teams_full.csv")
 
 # FUNÇÃO DE ATAQUE DE UM TIME
 
