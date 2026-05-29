@@ -13,7 +13,7 @@ arquivo = os.path.join(os.path.dirname(__file__), "vietnamwar.xlsx.xlsx")
 # Seleção de aba
 aba = st.selectbox(
     "Escolha o conjunto de dados:",
-    ["Baixas", "Convocados", "Gastos"]
+    ["Baixas nas Forças Armadas", "Total de Convocados", "Total Gasto pelo Governo"]
 )
 
 # Ler dados
