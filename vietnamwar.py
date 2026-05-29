@@ -8,7 +8,7 @@ st.title("Guerra do Vietnã - Análise de Dados dos Estados Unidos durante a Gue
 # Carregar arquivo Excel
 import os
 
-arquivo = os.path.join(os.path.dirname(__file__), "vietnamwar.xlsx")
+arquivo = os.path.join(os.path.dirname(__file__), "vietnamwar.xlsx.xlsx")
 
 # Seleção de aba
 aba = st.selectbox(
