@@ -6,7 +6,9 @@ import matplotlib.pyplot as plt
 st.title("Guerra do Vietnã - Análise de Dados dos Estados Unidos durante a Guerra do Vietnã (1955-1975)")
 
 # Carregar arquivo Excel
-arquivo = "vietnam.xlsx"
+import os
+
+arquivo = os.path.join(os.path.dirname(__file__), "vietnamwar.xlsx")
 
 # Seleção de aba
 aba = st.selectbox(
