@@ -2,11 +2,28 @@ import streamlit as st
 import random
 import pandas as pd
 
+df = pd.read_csv("nba_teams_full.csv")
+
 
 # AVALIAÇÃO DOS TIMES
+teams = {}
 
-def load_teams():
-    df = pd.read_csv("nba_teams_full.csv")
+for _, row in df.iterrows():
+    team = row["team"]
+
+    if team not in teams:
+        teams[team] = []
+
+    player = {
+        "name": row["player"],
+        "points": row["points"],
+        "rebounds": row["rebounds"],
+        "assists": row["assists"],
+        "steals": row["steals"],
+        "blocks": row["blocks"]
+    }
+
+    teams[team].append(player)
 
 # FUNÇÃO DE ATAQUE DE UM TIME
 
