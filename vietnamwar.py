@@ -35,21 +35,22 @@ st.write(f"Gerando gráfico: X={eixo_x}, Y={eixo_y}, Tipo={tipo}")
 
 fig, ax = plt.subplots(figsize=(10, 5))
 
-x_vals = df[eixo_x]
+x_vals = df[eixo_x].astype(str)
 y_vals = pd.to_numeric(df[eixo_y], errors='coerce')
+indices = range(len(x_vals))
 
 if tipo == "Linha":
-    ax.plot(x_vals, y_vals, marker='o')
+    ax.plot(indices, y_vals, marker='o')
 elif tipo == "Barras":
-    ax.bar(x_vals, y_vals)
+    ax.bar(indices, y_vals)
 elif tipo == "Dispersão":
-    ax.scatter(x_vals, y_vals)
+    ax.scatter(indices, y_vals)
 elif tipo == "Área":
-    ax.fill_between(range(len(y_vals)), y_vals, alpha=0.5)
-    ax.plot(x_vals, y_vals, marker='o')
-    ax.set_xticks(range(len(x_vals)))
-    ax.set_xticklabels(x_vals, rotation=45)
+    ax.fill_between(indices, y_vals, alpha=0.5)
+    ax.plot(indices, y_vals, marker='o')
 
+ax.set_xticks(indices)
+ax.set_xticklabels(x_vals, rotation=45)
 ax.set_xlabel(eixo_x)
 ax.set_ylabel(eixo_y)
 ax.set_title(f"{tipo} - {eixo_y} por {eixo_x}")
