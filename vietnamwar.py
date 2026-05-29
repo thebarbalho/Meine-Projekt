@@ -5,7 +5,7 @@ import os
 
 st.title("Guerra do Vietnã")
 
-arquivo = "vietnam.xlsx.xlsx"
+arquivo = "vietnamwar.xlsx.xlsx"
 
 # Carrega Excel
 xls = pd.ExcelFile(arquivo)
