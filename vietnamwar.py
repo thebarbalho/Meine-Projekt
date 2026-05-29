@@ -35,7 +35,7 @@ st.write(f"Gerando gráfico: X={eixo_x}, Y={eixo_y}, Tipo={tipo}")
 
 fig, ax = plt.subplots(figsize=(10, 5))
 
-x_vals = pd.to_numeric(df[eixo_x], errors='ignore')
+x_vals = df[eixo_x]
 y_vals = pd.to_numeric(df[eixo_y], errors='coerce')
 
 if tipo == "Linha":
