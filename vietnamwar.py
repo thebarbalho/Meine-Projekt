@@ -1,7 +1,6 @@
 # REQUISIÇÕES
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 
 # INTERFACE NO STREAMLIT
 st.title('GRÁFICOS SOBRE A GUERRA DO VIETNÃ (1955-1975)')
