@@ -13,7 +13,8 @@ except Exception as e:
     st.error(f"Erro ao abrir arquivo: {e}")
     st.stop()
 
-aba = st.selectbox("Escolha o conjunto de dados:", xls.sheet_names)
+abas = [s for s in xls.sheet_names if "gasto" not in s.lower()]
+aba = st.selectbox("Escolha o conjunto de dados:", abas)
 
 df = pd.read_excel(arquivo, sheet_name=aba)
 
