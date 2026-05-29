@@ -1,20 +1,8 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
-
 st.set_page_config(page_title="Guerra do Vietnã", layout="centered")
 st.title("Guerra do Vietnã - Análise de Dados")
-
-# ============================
-# TESTE: gráfico simples para verificar se matplotlib funciona
-# ============================
-st.subheader("Teste - Gráfico de exemplo")
-fig_teste, ax_teste = plt.subplots()
-ax_teste.plot([1, 2, 3, 4], [10, 20, 25, 30], marker='o')
-ax_teste.set_title("Teste - gráfico está funcionando")
-st.pyplot(fig_teste)
-# ============================
 
 arquivo = "vietnamwar.xlsx"
 
@@ -38,7 +26,9 @@ colunas = df.columns.tolist()
 colunas_num = df.select_dtypes(include='number').columns.tolist()
 
 eixo_x = st.selectbox("Coluna para eixo X:", colunas, index=0)
-eixo_y = st.selectbox("Coluna para eixo Y:", colunas_num if colunas_num else colunas, index=min(1, len(colunas) - 1))
+
+colunas_y = colunas_num if colunas_num else colunas
+eixo_y = st.selectbox("Coluna para eixo Y:", colunas_y, index=min(1, len(colunas_y) - 1))
 tipo = st.selectbox("Tipo de gráfico:", ["Linha", "Barras", "Dispersão", "Área"])
 
 st.write(f"Gerando gráfico: X={eixo_x}, Y={eixo_y}, Tipo={tipo}")
