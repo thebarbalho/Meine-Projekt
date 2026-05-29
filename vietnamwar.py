@@ -7,11 +7,6 @@ st.title("Guerra do Vietnã")
 
 arquivo = "vietnam.xlsx.xlsx"
 
-# Verifica arquivo
-if not os.path.exists(arquivo):
-    st.error("Arquivo não encontrado!")
-    st.stop()
-
 # Carrega Excel
 xls = pd.ExcelFile(arquivo)
 
