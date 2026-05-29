@@ -1,0 +1,151 @@
+team,name,attack,defense
+76ers,Tyrese Maxey,94,94
+76ers,V.J. Edgecombe,89,94
+76ers,Paul George,91,94
+76ers,Joel Embiid,96,94
+76ers,Andre Drummond,86,94
+Bucks,Ryan Rollins,84,91
+Bucks,Kevin Porter Jr.,85,91
+Bucks,Giannis Antetokounmpo,98,91
+Bucks,Bobby Portis Jr.,87,91
+Bucks,Myles Turner,88,91
+Bulls,Josh Giddey,89,88
+Bulls,Anfernee Simons,88,88
+Bulls,Collin Sexton,87,88
+Bulls,Matas Buzelis,88,88
+Bulls,Jalen Smith,82,88
+Cavaliers,James Harden,94,96
+Cavaliers,Donovan Mitchell,96,96
+Cavaliers,Max Strus,87,96
+Cavaliers,Evan Mobley,91,96
+Cavaliers,Jarrett Allen,86,96
+Celtics,Payton Pritchard,89,94
+Celtics,Derrick White,91,94
+Celtics,Jaylen Brown,97,94
+Celtics,Jayson Tatum,99,94
+Celtics,Nicola Vucevic,89,94
+Clippers,Darius Garland,92,93
+Clippers,Bradley Beal,88,93
+Clippers,Kawhi Leonard,97,93
+Clippers,John Collins,87,93
+Clippers,Brook Lopez,90,93
+Grizzlies,Ja Morant,94,86
+Grizzlies,Ty Jerome,85,86
+Grizzlies,G.G. Jackson,86,86
+Grizzlies,Santi Aldama,83,86
+Grizzlies,Zach Edey,88,86
+Hawks,C.J. McCollum,92,92
+Hawks,Dyson Daniels,90,92
+Hawks,Jonathan Kuminga,88,92
+Hawks,Jalen Johnson,93,92
+Hawks,Onyeka Okognwu,86,92
+Heat,Tyler Herro,92,93
+Heat,Norman Powell,89,93
+Heat,Jaime Jaquez Jr.,89,93
+Heat,Andrew Wiggins,89,93
+Heat,Bam Adebayo,96,93
+Hornets,LaMelo Ball,96,88
+Hornets,Brandon Miller,91,88
+Hornets,Kon Knueppel,93,88
+Hornets,Miles Bridges,88,88
+Hornets,Moussa Diabate,84,88
+Jazz,Keyonte George,85,90
+Jazz,Ace Bailey,85,90
+Jazz,Kevin Love,86,90
+Jazz,Jaren Jackson Jr.,88,90
+Jazz,Walker Kessler,87,90
+Kings,Russell Westbrook,91,85
+Kings,Zach LaVine,92,85
+Kings,DeMar DeRozan,91,85
+Kings,Keegan Murray,85,85
+Kings,Domantas Sabonis,94,85
+Knicks,Jalen Brunson,98,92
+Knicks,Mikal Bridges,92,92
+Knicks,O.G. Anunoby,90,92
+Knicks,Josh Hart,89,92
+Knicks,Karl-Anthony Towns,96,92
+Lakers,Luka Doncic,99,93
+Lakers,Austin Reaves,95,93
+Lakers,Marcus Smart,88,93
+Lakers,LeBron James,99,93
+Lakers,DeAndre Ayton,90,93
+Magic,Jalen Suggs,90,95
+Magic,Desmond Bane,92,95
+Magic,Franz Wagner,94,95
+Magic,Paolo Banchero,96,95
+Magic,Wendell Carter Jr.,88,95
+Mavericks,Kyrie Irving,97,91
+Mavericks,Klay Thompson,93,91
+Mavericks,Khris Middleton,92,91
+Mavericks,Cooper Flagg,95,91
+Mavericks,Daniel Gafford,88,91
+Nets,Egor Demin,84,87
+Nets,Michael Porter Jr.,89,87
+Nets,Danny Wolf,86,87
+Nets,Day'Ron Sharpe,83,87
+Nets,Nicolas Claxton,88,87
+Nuggets,Jamal Murray,95,90
+Nuggets,Christian Braun,85,90
+Nuggets,Cam Johnson,88,90
+Nuggets,Aaron Gordon,91,90
+Nuggets,Nikola Jokic,99,90
+Pacers,Tyrese Haliburton,97,93
+Pacers,Andrew Nembhard,91,93
+Pacers,Aaron Nesmith,87,93
+Pacers,Pascal Siakam,93,93
+Pacers,Ivica Zubac,87,93
+Pelicans,Dejounte Murray,90,92
+Pelicans,Jordan Poole,91,92
+Pelicans,Trey Murphy III,89,92
+Pelicans,Saddiq Bey,88,92
+Pelicans,Zion Williamson,94,92
+Pistons,Cade Cunningham,97,96
+Pistons,Duncan Robinson,86,96
+Pistons,Ausar Thompson,92,96
+Pistons,Tobias Harris,90,96
+Pistons,Jalen Duren,92,96
+Raptors,Immanuel Quickley,90,92
+Raptors,R.J. Barrett,91,92
+Raptors,Brandon Ingram,92,92
+Raptors,Scottie Barnes,94,92
+Raptors,Jakob Poeltl,87,92
+Rockets,Amen Thompson,93,94
+Rockets,Jabari Smith Jr.,90,94
+Rockets,Tari Eason,90,94
+Rockets,Kevin Durant,98,94
+Rockets,Alperen Sengun,95,94
+Spurs,De'Aaron Fox,93,96
+Spurs,Stephon Castle,92,96
+Spurs,Dylan Harper,88,96
+Spurs,Devin Vassell,88,96
+Spurs,Victor Wembanyama,86,96
+Suns,Devin Booker,96,93
+Suns,Jalen Green,92,93
+Suns,Dillon Brooks,92,93
+Suns,Collin Gillespie,87,93
+Suns,Mark Williams,89,93
+Thunder,Shai Gilgeous-Alexander,98,95
+Thunder,Lu Dort,86,95
+Thunder,Jalen Williams,94,95
+Thunder,Chet Holmgren,94,95
+Thunder,Isaiah Hartenstein,90,95
+Timberwolves,Donte DiVincenzo,90,95
+Timberwolves,Anthony Edwards,98,95
+Timberwolves,Jaden McDaniels,91,95
+Timberwolves,Julius Randle,94,95
+Timberwolves,Rudy Gobert,90,95
+Trail Blazers,Damian Lillard,96,92
+Trail Blazers,Scoot Henderson,91,92
+Trail Blazers,Toumani Camara,92,92
+Trail Blazers,Deni Avdija,95,92
+Trail Blazers,Donovan Clingan,89,92
+Warriors,Stephen Curry,99,94
+Warriors,Gui Santos,93,94
+Warriors,Jimmy Butler,95,94
+Warriors,Draymond Green,92,94
+Warriors,Kristaps Porzingis,93,94
+Wizards,Trae Young,96,90
+Wizards,Bilal Coulibaly,89,90
+Wizards,Kyshawn George,84,90
+Wizards,Alex Sarr,93,90
+Wizards,Anthony Davis,96,90
